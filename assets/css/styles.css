@@ -55,6 +55,9 @@ a {
 
 header {
     background: #FFFCF4;
+    position: sticky;
+    top: -24px;
+    z-index: 1;
 }
 
 nav {
@@ -62,6 +65,7 @@ nav {
     justify-content: space-between;
     align-items: center;
     padding-top: 36px;
+    padding-bottom: 12px;
 }
 
 nav .nav-bar {
@@ -126,7 +130,7 @@ nav .header-btn {
 /* =========== hero ========= */
 
 .hero {
-    padding: 64px 0px 65px;
+    padding: 52px 0px 65px;
     background: #FFFCF4;
 }
 
