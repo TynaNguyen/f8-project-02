@@ -83,13 +83,24 @@ nav ul a {
     font-size: 1.6rem;
     padding: 8px 21px;
     display: inline-block;
+    text-align: center;
 }
 
 .nav-bar a:hover,
 .nav-bar li.active a {
-    text-shadow: 1px 0 0 currentColor;
+    font-weight: 600;
     color: var(--primary-color);
     position: relative;
+    
+}
+
+.nav-bar a::before {
+    content: attr(title);
+    display: block;
+    height: 0;
+    font-weight: 600;
+    overflow: hidden;
+    visibility: hidden;
 }
 
 .nav-bar li.active a::after {
@@ -131,6 +142,7 @@ nav .header-btn {
 
 .main .banner img {
     width: 470px;
+    max-width: 100%;
     height: 685px;
     object-fit: cover;
     border-radius: 20px;
@@ -138,6 +150,7 @@ nav .header-btn {
 
 .hero-content {
     width: 490px;
+    max-width: 100%;
 }
 
 .hero-content h1 {
@@ -284,6 +297,8 @@ nav .header-btn {
     margin-top: 55px;
     display: flex;
     justify-content: space-between;
+    gap: 30px;
+
 }
 
 .course-content {
@@ -303,11 +318,12 @@ nav .header-btn {
 }
 
 .course .course-detail .course-img {
-    width: 370px;
+    width: calc(100% + 2px);
     height: 278px;
     object-fit: cover;
     border-top-left-radius: 12px;
     border-top-right-radius: 12px;
+    margin: -1px;
 }
 
 .course-title {
