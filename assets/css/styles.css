@@ -677,6 +677,10 @@ ul .list:last-of-type .item {
     font-weight: 400;
 }
 
+ul .list:last-of-type .item:first-child {
+    margin-top: 0px;
+}
+
 footer .desc {
     color: #BFBCB2;
     font-size: 1.4rem;
